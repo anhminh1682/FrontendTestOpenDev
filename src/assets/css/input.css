@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "BigShouldersStencilText-Bold";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/assets/fonts/BigShouldersStencilText/BigShouldersStencilText-Bold.woff2)
+      format("woff2");
+  }
+}
