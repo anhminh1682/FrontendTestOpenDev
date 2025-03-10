@@ -4,11 +4,105 @@
 
 @layer base {
   @font-face {
-    font-family: "BigShouldersStencilText-Bold";
+    font-family: "BigShouldersStencilText";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-display: swap;
     src: url(/src/assets/fonts/BigShouldersStencilText/BigShouldersStencilText-Bold.woff2)
       format("woff2");
   }
+
+  @font-face {
+    font-family: "SpaceGrotesk";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/assets/fonts/SpaceGrotesk/static/SpaceGrotesk-Light.woff2)
+      format("woff2");
+  }
+
+  @font-face {
+    font-family: "SpaceGrotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/src/assets/fonts/SpaceGrotesk/static/SpaceGrotesk-Bold.woff2)
+      format("woff2");
+  }
+
+  @font-face {
+    font-family: "BigShouldersText";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/src/assets/fonts/BigShouldersText/BigShouldersText-Thin.woff2)
+      format("woff2");
+  }
+
+  @font-face {
+    font-family: "BigShouldersText";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/src/assets/fonts/BigShouldersText/BigShouldersText-Bold.woff2)
+      format("woff2");
+  }
+
+  @font-face {
+    font-family: "LexendDecaBold";
+    font-style: normal;
+    /* font-weight: 400; */
+    font-display: swap;
+    src: url(/src/assets/fonts/LexendDeca/static/LexendDeca-Bold.woff2)
+      format("woff2");
+  }
+
+  @font-face {
+    font-family: "BigShouldersDisplay-Bold";
+    font-style: normal;
+    /* font-weight: 400; */
+    font-display: swap;
+    src: url(/src/assets/fonts/BigShoulderDisplay/BigShouldersDisplay-Bold.woff2)
+      format("woff2");
+  }
+
+  h1 {
+    @apply font-BigShouldersStencilText font-bold lg:text-9xl text-7xl;
+  }
+
+  h2 {
+    @apply font-BigShouldersText xl:text-7xl sm:text-6xl text-5xl;
+  }
+
+  h3 {
+    @apply font-BigShouldersText lg:text-4xl md:text-3xl text-[1.5rem];
+  }
+}
+
+@layer components {
+  .btn {
+    @apply relative px-5 border-[1px] rounded-lg border-textLight skew-x-[-26deg] min-h-[49px];
+  }
+
+  .btn span {
+    @apply skew-x-[26deg] inline-block text-nowrap leading-[47px];
+  }
+
+  .circle-shadow-small {
+    @apply absolute w-[100px] h-[100px] blur-[50px];
+    background: radial-gradient(50% 50% at 50% 50%, #e30613 0%, #009fe3 100%);
+  }
+
+  .circle-shadow-big {
+    @apply absolute w-[168px] h-[168px] blur-[50px];
+
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(0, 159, 227, 0.5) 0%,
+      rgba(227, 6, 19, 0.5) 100%
+    );
+  }
+}
+
+@layer utilities {
 }
