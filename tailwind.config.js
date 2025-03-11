@@ -3,6 +3,7 @@ module.exports = {
   content: ["./*.html", "./src/**/*.{js}"],
   theme: {
     screens: {
+      ssm: "345px",
       sm: "480px",
       md: "768px",
       lg: "1024px",
@@ -24,12 +25,21 @@ module.exports = {
       "hero-pattern-4": "url('/src/assets/images/multiball.png')",
       "hero-pattern-5": "url('/src/assets/images/laserova.png')",
 
+      "bgImg-tab-1": "url('/src/assets/images/tab-image-1.png')",
+      "bgImg-tab-2": "url('/src/assets/images/tab-image-2.png')",
+      "bgImg-tab-3": "url('/src/assets/images/tab-image-3.png')",
+      "bgImg-tab-4": "url('/src/assets/images/tab-image-4.png')",
+      "bgImg-tab-5": "url('/src/assets/images/tab-image-5.png')",
+      "bgImg-tab-6": "url('/src/assets/images/tab-image-6.png')",
+
       "gradient-banner":
         "linear-gradient(180deg, rgba(25, 25, 25, 0) 52.85%, #191919 100%)",
       "gradient-tab-light":
         "linear-gradient(90deg, rgba(217, 217, 217, 0.2) 0%, #D9D9D9 100%)",
       "gradient-tab-dark":
         "linear-gradient(90deg, rgba(41, 41, 41, 0.2) 0%, #292929 100%)",
+      "gradient-tabContent":
+        "linear-gradient(34.19deg, #292929 7.74%, rgba(41, 41, 41, 0) 67.2%)",
 
       radialGradientCircle:
         "radial-gradient(50% 50% at 50% 50%, rgba(227, 6, 19, 0.1) 0%, rgba(0, 159, 227, 0.2) 100%)",
@@ -37,7 +47,13 @@ module.exports = {
 
     backgroundPosition: {
       "banner-position": "center",
+      tabBgImageSize: "-40% 44%",
+      tabBgGradientSize: "-38% 44%",
     },
+    backgroundSize: {
+      "size-70%": "70%",
+    },
+
     fontSize: {
       "9xl": [
         "7.5rem",
@@ -118,6 +134,7 @@ module.exports = {
       BigShouldersStencilText: "BigShouldersStencilText",
       SpaceGrotesk: "SpaceGrotesk",
       BigShouldersText: "BigShouldersText",
+      LexendDeca: "LexendDeca",
     },
     extend: {},
   },

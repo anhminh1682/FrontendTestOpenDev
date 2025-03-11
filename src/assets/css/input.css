@@ -33,6 +33,15 @@
   @font-face {
     font-family: "BigShouldersText";
     font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/src/assets/fonts/BigShouldersText/BigShouldersText-Medium.woff2)
+      format("woff2");
+  }
+
+  @font-face {
+    font-family: "BigShouldersText";
+    font-style: normal;
     font-weight: 500;
     font-display: swap;
     src: url(/src/assets/fonts/BigShouldersText/BigShouldersText-Thin.woff2)
@@ -49,9 +58,9 @@
   }
 
   @font-face {
-    font-family: "LexendDecaBold";
+    font-family: "LexendDeca";
     font-style: normal;
-    /* font-weight: 400; */
+    font-weight: 700;
     font-display: swap;
     src: url(/src/assets/fonts/LexendDeca/static/LexendDeca-Bold.woff2)
       format("woff2");
@@ -71,7 +80,7 @@
   }
 
   h2 {
-    @apply font-BigShouldersText xl:text-7xl sm:text-6xl text-5xl;
+    @apply font-BigShouldersText xl:text-7xl sm:text-5xl ssm:text-4xl text-3xl;
   }
 
   h3 {
@@ -86,6 +95,14 @@
 
   .btn span {
     @apply skew-x-[26deg] inline-block text-nowrap leading-[47px];
+  }
+
+  .btn-bgLight {
+    @apply flex items-center px-1 py-[4px] rounded-full bg-textLight;
+  }
+
+  .btn-bgLight span {
+    @apply text-base text-textDark font-bold;
   }
 
   .circle-shadow-small {
@@ -105,4 +122,28 @@
 }
 
 @layer utilities {
+  .tablinks-active {
+    @apply bg-textDark w-[568px];
+  }
+
+  .tablinks-active .gradient-tab {
+    @apply bg-gradient-tab-dark;
+  }
+
+  .tablinks-active .tab-text {
+    @apply text-textLight pr-[102px];
+  }
+
+  .tabcontent {
+    animation: fade 300ms;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
