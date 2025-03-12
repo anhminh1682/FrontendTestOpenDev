@@ -154,7 +154,7 @@
 
   /* Tab */
   .tablinks-active {
-    @apply bg-textDark w-[568px];
+    @apply bg-textDark xl:w-[568px] max-w-[568px] w-full;
   }
 
   .tablinks-active .gradient-tab {
@@ -162,7 +162,7 @@
   }
 
   .tablinks-active .tab-text {
-    @apply text-textLight pr-[102px];
+    @apply text-textLight sm:pr-[102px] pr-[28px];
   }
 
   .tabcontent {

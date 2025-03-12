@@ -1,3 +1,15 @@
+// HEADER
+let body = document.querySelector("body");
+let header = document.querySelector("header>div");
+
+body.onscroll = () => {
+  if (window.scrollY == 0) {
+    header.style.backgroundColor = "transparent";
+  } else {
+    header.style.backgroundColor = "#292929cc";
+  }
+};
+
 // HERO BANNER
 let bannerSlides = [
   {
