@@ -76,7 +76,7 @@
   }
 
   h1 {
-    @apply font-BigShouldersStencilText font-bold lg:text-9xl text-7xl;
+    @apply font-BigShouldersStencilText font-bold lg:text-9xl sm:text-7xl text-6xl;
   }
 
   h2 {
@@ -84,7 +84,7 @@
   }
 
   h3 {
-    @apply font-BigShouldersText lg:text-4xl md:text-3xl text-[1.5rem];
+    @apply font-BigShouldersText lg:text-3xl md:text-3xl text-[1.5rem];
   }
 }
 
@@ -122,6 +122,37 @@
 }
 
 @layer utilities {
+  /* Hero Banner */
+  .bg-hero-1 {
+    background-image: url("/src/assets/images/go-kart.png");
+    background-size: cover;
+  }
+
+  .bg-hero-2 {
+    background-image: url("/src/assets/images/jumparena.png");
+    background-size: cover;
+  }
+
+  .bg-hero-3 {
+    background-image: url("/src/assets/images/virtual-reality.png");
+    background-size: cover;
+  }
+
+  .bg-hero-4 {
+    background-image: url("/src/assets/images/multiball.png");
+    background-size: cover;
+  }
+
+  .bg-hero-5 {
+    background-size: cover;
+    background-image: url("/src/assets/images/laserova.png");
+  }
+
+  .list-dots .dot-item.active div {
+    @apply bg-textLight;
+  }
+
+  /* Tab */
   .tablinks-active {
     @apply bg-textDark w-[568px];
   }

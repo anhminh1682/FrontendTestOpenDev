@@ -660,10 +660,18 @@ video {
 
 h1 {
   font-family: BigShouldersStencilText;
-  font-size: 4.5rem;
-  line-height: 5.75rem;
+  font-size: 3.75rem;
   letter-spacing: 0;
   font-weight: 700;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 4.5rem;
+    line-height: 5.75rem;
+    letter-spacing: 0;
+    font-weight: 700;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -722,7 +730,7 @@ h3 {
 
 @media (min-width: 1024px) {
   h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     letter-spacing: 0;
     font-weight: 700;
   }
@@ -846,12 +854,12 @@ h3 {
   bottom: 0px;
 }
 
-.bottom-\[-134\.905px\] {
-  bottom: -134.905px;
-}
-
 .bottom-\[-15px\] {
   bottom: -15px;
+}
+
+.bottom-\[-213px\] {
+  bottom: -213px;
 }
 
 .bottom-\[-4px\] {
@@ -912,6 +920,10 @@ h3 {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .z-50 {
@@ -1008,6 +1020,10 @@ h3 {
   margin-top: 0.75rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-\[-58px\] {
   margin-top: -58px;
 }
@@ -1052,6 +1068,14 @@ h3 {
   height: 4rem;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
 .h-7 {
   height: 1.75rem;
 }
@@ -1087,6 +1111,14 @@ h3 {
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-3 {
+  width: 0.75rem;
 }
 
 .w-5\/12 {
@@ -1173,6 +1205,10 @@ h3 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1209,6 +1245,10 @@ h3 {
   gap: 1.5rem;
 }
 
+.gap-\[10px\] {
+  gap: 10px;
+}
+
 .space-x-\[10px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(10px * var(--tw-space-x-reverse));
@@ -1231,6 +1271,10 @@ h3 {
   border-radius: 1.5rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1239,12 +1283,21 @@ h3 {
   border-radius: 0.75rem;
 }
 
+.border-\[1px\] {
+  border-width: 1px;
+}
+
 .border-b-\[1px\] {
   border-bottom-width: 1px;
 }
 
 .border-\[rgba\(0\2c 0\2c 0\2c 0\)\] {
   border-color: rgba(0,0,0,0);
+}
+
+.border-textLight {
+  --tw-border-opacity: 1;
+  border-color: rgb(217 217 217 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#29292980\] {
@@ -1314,10 +1367,6 @@ h3 {
 
 .bg-gradient-tabContent {
   background-image: linear-gradient(34.19deg, #292929 7.74%, rgba(41, 41, 41, 0) 67.2%);
-}
-
-.bg-hero-pattern-1 {
-  background-image: url('/src/assets/images/go-kart.png');
 }
 
 .bg-size-70\% {
@@ -1471,6 +1520,10 @@ h3 {
   padding-top: 100px;
 }
 
+.pt-\[160px\] {
+  padding-top: 160px;
+}
+
 .text-right {
   text-align: right;
 }
@@ -1599,6 +1652,40 @@ h3 {
   transition-timing-function: linear;
 }
 
+/* Hero Banner */
+
+.bg-hero-1 {
+  background-image: url("/src/assets/images/go-kart.png");
+  background-size: cover;
+}
+
+.bg-hero-2 {
+  background-image: url("/src/assets/images/jumparena.png");
+  background-size: cover;
+}
+
+.bg-hero-3 {
+  background-image: url("/src/assets/images/virtual-reality.png");
+  background-size: cover;
+}
+
+.bg-hero-4 {
+  background-image: url("/src/assets/images/multiball.png");
+  background-size: cover;
+}
+
+.bg-hero-5 {
+  background-size: cover;
+  background-image: url("/src/assets/images/laserova.png");
+}
+
+.list-dots .dot-item.active div {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity, 1));
+}
+
+/* Tab */
+
 .tablinks-active {
   width: 568px;
   --tw-bg-opacity: 1;
@@ -1671,6 +1758,10 @@ h3 {
 }
 
 @media (min-width: 480px) {
+  .sm\:bottom-\[-140px\] {
+    bottom: -140px;
+  }
+
   .sm\:top-\[248px\] {
     top: 248px;
   }
@@ -1694,6 +1785,11 @@ h3 {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:py-\[100px\] {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .sm\:pl-\[100px\] {
@@ -1724,6 +1820,10 @@ h3 {
 }
 
 @media (min-width: 768px) {
+  .md\:bottom-\[-120px\] {
+    bottom: -120px;
+  }
+
   .md\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -1931,6 +2031,10 @@ h3 {
 
   .xl\:w-\[102px\] {
     width: 102px;
+  }
+
+  .xl\:text-nowrap {
+    text-wrap: nowrap;
   }
 
   .xl\:pr-28 {

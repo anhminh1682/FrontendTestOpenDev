@@ -19,12 +19,6 @@ module.exports = {
     },
     gradientColorStops: {},
     backgroundImage: {
-      "hero-pattern-1": "url('/src/assets/images/go-kart.png')",
-      "hero-pattern-2": "url('/src/assets/images/jumparena.png')",
-      "hero-pattern-3": "url('/src/assets/images/virtual-reality.png')",
-      "hero-pattern-4": "url('/src/assets/images/multiball.png')",
-      "hero-pattern-5": "url('/src/assets/images/laserova.png')",
-
       "bgImg-tab-1": "url('/src/assets/images/tab-image-1.png')",
       "bgImg-tab-2": "url('/src/assets/images/tab-image-2.png')",
       "bgImg-tab-3": "url('/src/assets/images/tab-image-3.png')",
@@ -138,5 +132,8 @@ module.exports = {
     },
     extend: {},
   },
+
+  safelist: ["bg-hero-1", "bg-hero-2", "bg-hero-3", "bg-hero-4", "bg-hero-5"],
+
   plugins: [],
 };
